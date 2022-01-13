@@ -1,4 +1,4 @@
-import { HeaderElem } from './HeaderStyles';
+import classes from './Header.module.css';
 
 type HeaderProps = {
   title: string;
@@ -6,9 +6,9 @@ type HeaderProps = {
 
 const Header = ({ title }: HeaderProps) => {
   return (
-    <HeaderElem>
+    <header className={classes.header}>
       <h1>{title}</h1>
-    </HeaderElem>
+    </header>
   );
 };
 
