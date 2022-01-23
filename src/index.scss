@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+
+@import './styles/variables.scss';
+
+body {
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: $gray;
+  color: $white;
+}
+
+* {
+  box-sizing: border-box;
+}
