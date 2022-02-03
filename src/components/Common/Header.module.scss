@@ -2,11 +2,15 @@
 
 .header {
   background-color: $dark-gray;
-  padding: 25px;
+  padding: 0 25px;
   text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .nav-links,

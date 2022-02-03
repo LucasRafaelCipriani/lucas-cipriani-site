@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+
+.language-selector {
+  border: 0;
+  background: $dark-gray;
+  color: $white;
+  font-size: 16px;
+  font-family: inherit;
+
+  &:focus-visible {
+    outline: none;
+  }
+}

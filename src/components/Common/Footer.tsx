@@ -1,11 +1,12 @@
+import { useTranslation } from 'react-i18next';
 import classes from './Footer.module.scss';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className={classes.footer}>
-      <small>
-        Made by Lucas Rafael Cipriani. Design by Laura Liz Cipriani.
-      </small>
+      <small>{t('copyright')}</small>
     </footer>
   );
 };

@@ -1,18 +1,22 @@
 import { Link, NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import classes from './Header.module.scss';
+import LanguageSelector from './LanguageSelector';
 
 const Header = () => {
+  const { t } = useTranslation();
+
   return (
     <header className={classes.header}>
       <ul className={classes['nav-links']}>
         <li>
-          <NavLink to="/">Work</NavLink>
+          <NavLink to="/">{t('header.work')}</NavLink>
         </li>
         <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/about">{t('header.about')}</NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/contact">{t('header.contact')}</NavLink>
         </li>
       </ul>
       <h1 className={classes.title}>
@@ -48,6 +52,9 @@ const Header = () => {
           <a href="mailto: lucas.ci25@hotmail.com" title="E-mail">
             <i className="far fa-envelope"></i>
           </a>
+        </li>
+        <li>
+          <LanguageSelector />
         </li>
       </ul>
     </header>
