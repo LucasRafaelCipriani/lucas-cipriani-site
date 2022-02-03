@@ -7,6 +7,8 @@ body {
   font-family: 'Red Hat Display', sans-serif;
   background-color: $gray;
   color: $white;
+  position: relative;
+  min-height: 100vh;
 }
 
 * {

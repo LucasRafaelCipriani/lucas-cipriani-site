@@ -13,10 +13,9 @@ const LanguageSelector = () => {
       <select
         className={classes['language-selector']}
         onChange={changeLanguageHandler}
+        defaultValue="en"
       >
-        <option value="en" selected>
-          EN
-        </option>
+        <option value="en">EN</option>
         <option value="pt">PT</option>
       </select>
     </>
