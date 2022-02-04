@@ -1,14 +1,15 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import '@fortawesome/fontawesome-svg-core/styles.css';
-import store from '../store';
+import type { AppProps } from 'next/app';
+import Head from 'next/head';
 import '../index.scss';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import '../i18n';
+import store from '../store';
 import Header from '../components/Common/Header';
 import Footer from '../components/Common/Footer';
-import Head from 'next/head';
 
-function MyApp({ Component, pageProps }: any) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
       <Head>
