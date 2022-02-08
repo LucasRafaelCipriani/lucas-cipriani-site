@@ -1,30 +1,26 @@
-//import classes from './Education.module.scss';
-
-const educationList = [
-  {
-    id: 1,
-    name: 'Teste',
-    description: 'Teste',
-    time: '2012-2014',
-  },
-  {
-    id: 2,
-    name: 'Teste 2',
-    description: 'Teste 2',
-    time: '2015-2018',
-  },
-];
+import { useTranslation } from 'react-i18next';
+import classes from './Education.module.scss';
 
 const Education = () => {
+  const { t } = useTranslation();
+
   return (
-    <section>
-      {educationList.map((item) => (
-        <div key={item.id}>
-          <p>{item.name}</p>
-          <p>{item.description}</p>
-          <p>{item.time}</p>
+    <section className={classes['education-section']}>
+      <h1>{t('education.title')}</h1>
+      <div className={classes['education-list']}>
+        <div className={classes['education-item']}>
+          <h2>{t('education.item1.title')}</h2>
+          <p>{t('education.item1.description')}</p>
+          <br />
+          <p>{t('education.time')}: 2012-2014</p>
         </div>
-      ))}
+        <div className={classes['education-item']}>
+          <h2>{t('education.item2.title')}</h2>
+          <p>{t('education.item2.description')}</p>
+          <br />
+          <p>{t('education.time')}: 2015-2018</p>
+        </div>
+      </div>
     </section>
   );
 };

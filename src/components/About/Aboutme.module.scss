@@ -2,7 +2,6 @@
   display: flex;
   column-gap: 30px;
   justify-content: space-between;
-  margin-bottom: 45px;
 
   p {
     width: 60%;
@@ -29,7 +28,7 @@
 
   @media (min-width: 1400px) {
     img {
-      max-height: 500px;
+      max-height: 400px;
     }
   }
 }

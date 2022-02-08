@@ -5,5 +5,22 @@
     "contact": "Contact"
   },
   "about-me": "I have almost 5 years of experience in the development field. In that time I had contact with several technologies and colleagues who taught me and inspired me to be a great professional, in addition to learning how e-commerce works in general.\nI have a degree in Information Systems and I have experience in Front End development using technologies such as JavaScript, HTML, CSS and frameworks such as React and Vue.\nI am interested in learning new technologies, studying and putting into practice all the knowledge I have acquired over the years in order to meet the requirements and add value to society.",
+  "education": {
+    "title": "Education",
+    "time": "Year",
+    "item1": {
+      "title": "High School",
+      "description": "I studied at Colégio Tradição since I was little and there I got my initial training, which led me to decide what I wanted to do in life."
+    },
+    "item2": {
+      "title": "University Education",
+      "description": "I studied at Faculdade Estácio Florianópolis for 4 years and there I got my Bachelor's Degree in Information Systems."
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "beginner": "Beginner",
+    "advanced": "Advanced"
+  },
   "copyright": "Made by Lucas Rafael Cipriani. Design by Laura Liz Cipriani."
 }

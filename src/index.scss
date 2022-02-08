@@ -17,4 +17,16 @@ body {
 
 main {
   padding: 40px 30px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+h1,
+h2 {
+  letter-spacing: 2px;
+  font-weight: 500;
 }
