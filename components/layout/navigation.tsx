@@ -11,8 +11,8 @@ const Navigation = () => {
           </Link>
         </li>
         <li>
-          <Link href="/projects" className="hover:underline">
-            Projects
+          <Link href="/work" className="hover:underline">
+            Work
           </Link>
         </li>
         <li>

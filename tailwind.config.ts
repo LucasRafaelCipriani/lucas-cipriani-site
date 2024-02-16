@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         'dark-blue': '#2D3E50',
         white: '#FFF',
+        cian: '#00B8D4',
       },
       transitionProperty: {
         height: 'height',

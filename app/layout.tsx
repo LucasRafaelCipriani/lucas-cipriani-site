@@ -16,9 +16,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col min-h-screen">
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+      </head>
+      <body className="flex flex-col min-h-screen bg-gray-500 text-white">
         <Header />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow md:max-w-[1230px] md:m-auto">
+          <div className="px-[20px] py-[80px] md:px-0">{children}</div>
+        </main>
         <Footer />
       </body>
     </html>
