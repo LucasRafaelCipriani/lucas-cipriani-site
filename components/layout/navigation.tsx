@@ -12,7 +12,7 @@ const Navigation = () => {
         </li>
         <li>
           <Link href="/work" className="hover:underline">
-            Work
+            My Work
           </Link>
         </li>
         <li>

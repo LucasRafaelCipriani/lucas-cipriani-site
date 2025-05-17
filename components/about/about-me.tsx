@@ -5,30 +5,33 @@ const AboutMe = () => {
     <>
       <h2 className="text-[30px] font-bold">About Me</h2>
       <p className="mt-[20px] text-[16px]">
-        With nearly six years of experience in the development sector, I've had
-        the privilege of engaging with a diverse array of technologies and
-        colleagues. These interactions have not only honed my skills but also
-        inspired me to excel as a professional. My journey has been enriched by
-        an in-depth understanding of the e-commerce landscape, offering me a
-        comprehensive view of its workings.
-        <br />
-        <br /> Holding a degree in Information Systems, my expertise primarily
-        lies in Front End development. I am proficient in utilizing core web
-        technologies such as JavaScript, HTML, and CSS, alongside mastering
-        frameworks like React and Vue. This technical proficiency is the
-        cornerstone of my development capabilities.
+        I have been fortunate enough to spend about eight years working in the
+        development sector with a range of technologies and people. Every
+        experience adds to my skill set, but I am confident that I will
+        continuously work hard at being as good as I can be at being a
+        professional. In recent years working in e-commerce has given me
+        extremely useful insights into how the industry operates. I have had a
+        well-rounded experience in e-commerce, which has given me a good
+        understanding of what e-commerce is.
         <br />
         <br />
-        My passion for technology extends beyond my current skill set; I am
-        fervently interested in exploring new technologies. I dedicate myself to
-        continuous learning, aiming to absorb and apply the wealth of knowledge
-        I've accumulated over the years. My goal is to not only meet the
-        requirements set before me but to significantly contribute value to
-        society through my work.
+        My education was in Information Systems and I specialize in Front End. I
+        am a technical developer able to leverage core web technologies like
+        JavaScript, HTML and CSS and am skilled with frameworks/libraries like
+        React and Vue. Technical ability is one of my strengths as a developer.
         <br />
-        <br /> This drive for constant growth and contribution is what defines
-        me both as a professional and an individual committed to making a
-        difference in the tech world.
+        <br />
+        I have every intention to continue to develop myself and embrace my
+        enthusiasm for technology. I am excited to explore new technologies. I
+        get joy out of learning and I aspire to use the knowledge I have gained
+        over the years to provide as much value to society as I can possibly
+        provide. My goal is to fulfil what is asked of me but also provide
+        meaning to my work and contribute to society.
+        <br />
+        <br />
+        This is what I mean by seeking constant growth and contributing - that
+        is a part of who I am, both personally and professionally in the space
+        that I work.
       </p>
       <blockquote className="italic mt-[20px]">
         "Crafting Tomorrow's Solutions, Today."

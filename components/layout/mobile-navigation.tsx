@@ -58,7 +58,7 @@ const MobileNavigation = () => {
               className="hover:underline"
               onClick={() => setIsOpen(false)}
             >
-              Work
+              My Work
             </Link>
           </li>
           <li>
