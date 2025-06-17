@@ -17,13 +17,13 @@ export async function GET() {
     },
     {
       title: 'E-commerce Platforms',
-      skills: ['Adobe Commerce', 'Shopify', 'OCC'],
+      skills: ['Adobe Commerce (Magento)', 'Shopify', 'OCC'],
     },
     {
       title: 'Methodologies and Tools',
       skills: [
         'Scrum',
-        'Agile (SAFe)',
+        'Agile',
         'JIRA',
         'BitBucket',
         'Github',
