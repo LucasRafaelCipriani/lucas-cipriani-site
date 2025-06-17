@@ -1,9 +1,9 @@
 import { Project } from '@/types/Project';
-import React from 'react';
+import { API_URL } from '@/constants/constants';
 import ProjectCard from '../content/ProjectCard';
 
 const ProjectsSections = async () => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/projects`, {
+  const res = await fetch(`${API_URL}/api/projects`, {
     cache: 'no-store',
   });
   const projects: Project[] = await res.json();

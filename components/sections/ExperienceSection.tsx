@@ -1,14 +1,11 @@
 import { Experience } from '@/types/Experience';
-import React from 'react';
+import { API_URL } from '@/constants/constants';
 import ExperienceCard from '../content/ExperienceCard';
 
 const ExperienceSection = async () => {
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_SITE_URL}/api/experiences`,
-    {
-      cache: 'no-store',
-    }
-  );
+  const res = await fetch(`${API_URL}/api/experiences`, {
+    cache: 'no-store',
+  });
   const experiences: Experience[] = await res.json();
 
   return (

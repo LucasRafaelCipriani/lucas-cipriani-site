@@ -1,14 +1,14 @@
 import { Experience } from '@/types/Experience';
-import React from 'react';
-import SkillBox from '../content/SkillBox';
 import { Language } from '@/types/Language';
+import { API_URL } from '@/constants/constants';
+import SkillBox from '../content/SkillBox';
 
 const SkillsSection = async () => {
   const data = Promise.all([
-    await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/skills`, {
+    await fetch(`${API_URL}/api/skills`, {
       cache: 'no-store',
     }).then((res) => res.json()),
-    await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/languages`, {
+    await fetch(`${API_URL}/api/languages`, {
       cache: 'no-store',
     }).then((res) => res.json()),
   ]);
