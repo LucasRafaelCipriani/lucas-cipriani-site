@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
-import './globals.css';
+import { Inter } from 'next/font/google';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Lucas Cipriani - Frontend Developer',
@@ -9,13 +10,18 @@ export const metadata: Metadata = {
     'This is the portfolio page of Lucas Cipriani, where you can find all my work related information.',
 };
 
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.className}>
       <head>
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" />

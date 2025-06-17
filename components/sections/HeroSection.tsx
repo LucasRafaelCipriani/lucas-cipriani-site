@@ -28,6 +28,7 @@ const HeroSection = () => {
             width={48}
             height={48}
             alt="Lucas Cipriani Profile"
+            priority
           />
           <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6 animate-fade-in">
             Hello, I am <span className="text-main">Lucas Cipriani</span>
