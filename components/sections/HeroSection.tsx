@@ -1,9 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
+import {
+  LINKEDIN_URL,
+  PERSONAL_EMAIL,
+  PERSONAL_PHONE,
+} from '@/constants/links';
 import EmailIcon from '../icons/EmailIcon';
 import LinkedinIcon from '../icons/LinkedinIcon';
 import PhoneIcon from '../icons/PhoneIcon';
 import DownArrowIcon from '../icons/DownArrowIcon';
+import Icon from '../layout/Icon';
 
 const HeroSection = () => {
   return (
@@ -24,33 +30,21 @@ const HeroSection = () => {
             Hello, I am <span className="text-main">Lucas Cipriani</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-4 max-w-3xl mx-auto">
-            Senior Frontend Developer
+            Frontend Developer
           </p>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
             Translating ideas into intuitive interfaces that drive results —
             building digital experiences for over 8 years.
           </p>
           <div className="flex justify-center space-x-6 mb-12">
-            <a
-              href="https://www.linkedin.com/in/lucas-cipriani/"
+            <Icon
+              IconComponent={LinkedinIcon}
+              href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 text-gray-700 hover:text-main"
-            >
-              <LinkedinIcon />
-            </a>
-            <a
-              href="mailto:lucas.ci25@hotmail.com"
-              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 text-gray-700 hover:text-main"
-            >
-              <EmailIcon />
-            </a>
-            <a
-              href="tel:+5548996001678"
-              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 text-gray-700 hover:text-main"
-            >
-              <PhoneIcon />
-            </a>
+            />
+            <Icon href={`mailto:${PERSONAL_EMAIL}`} IconComponent={EmailIcon} />
+            <Icon href={`tel:${PERSONAL_PHONE}`} IconComponent={PhoneIcon} />
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="px-8 py-3 bg-main text-white rounded-lg hover:bg-main-hover transition-colors duration-200 font-medium shadow-lg hover:shadow-xl">

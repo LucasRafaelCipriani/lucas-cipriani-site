@@ -1,6 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { cn } from '@/utils/cn';
+import { scrollToSectionHandler } from '@/utils/scroll-to-section';
 import HambugerMenuIcon from '../icons/HambugerMenuIcon';
 import NavLinks from './NavLinks';
 import NavLinksMobile from './NavLinksMobile';
@@ -8,13 +10,27 @@ import CloseIcon from '../icons/CloseIcon';
 
 const Header = () => {
   const [mobileMenuOpened, setMobileMenuOpened] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
 
-  const scrollToSectionHandler = (id: string) => {
-    console.log(id);
-  };
+  useEffect(() => {
+    const scroll = () => {
+      setIsScrolling(window.scrollY > 10);
+    };
+
+    window.addEventListener('scroll', scroll);
+
+    return () => window.removeEventListener('scroll', scroll);
+  }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <header
+      className={cn(
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent',
+        {
+          'bg-white/95 backdrop-blur-sm shadow-lg': isScrolling,
+        }
+      )}
+    >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold text-gray-800">Lucas Cipriani</div>
