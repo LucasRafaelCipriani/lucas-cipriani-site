@@ -4,7 +4,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'Lucas Cipriani Portfolio',
+  title: 'Lucas Cipriani - Frontend Developer',
   description:
     'This is the portfolio page of Lucas Cipriani, where you can find all my work related information.',
 };

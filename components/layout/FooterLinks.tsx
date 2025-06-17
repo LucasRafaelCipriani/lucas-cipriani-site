@@ -1,4 +1,4 @@
-import { navLinks } from '@/constants/links';
+import { navLinks } from '@/constants/constants';
 import React from 'react';
 
 const FooterLinks = ({

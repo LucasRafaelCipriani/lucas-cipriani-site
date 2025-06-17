@@ -2,9 +2,10 @@
 
 import {
   LINKEDIN_URL,
+  LOCATION,
   PERSONAL_EMAIL,
   PERSONAL_PHONE,
-} from '@/constants/links';
+} from '@/constants/constants';
 import { scrollToSectionHandler } from '@/utils/scroll-to-section';
 import EmailIcon from '../icons/EmailIcon';
 import LinkedinIcon from '../icons/LinkedinIcon';
@@ -60,12 +61,10 @@ const Footer = () => {
                   <PhoneIcon />
                 </a>
               </div>
-              <p className="text-gray-400 text-sm">
-                Nova Trento, Santa Catarina - Brazil
-              </p>
+              <p className="text-gray-400 text-sm">{LOCATION}</p>
               <p className="text-gray-400 text-sm mt-2">
-                Always open to new opportunities and collaborations in digital
-                transformation projects!
+                Always open to new opportunities and collaborations in frontend
+                development and digital experience projects!
               </p>
             </div>
           </div>

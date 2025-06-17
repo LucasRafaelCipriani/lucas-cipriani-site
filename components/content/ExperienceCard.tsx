@@ -12,7 +12,7 @@ const ExperienceCard = ({ experience }: { experience: Experience }) => {
           <h3 className="text-xl font-semibold text-gray-800 mb-2">
             {experience.title}
           </h3>
-          <h4 className="text-lg text-blue-600 font-medium">
+          <h4 className="text-lg text-main font-medium">
             {experience.company}
           </h4>
         </div>
@@ -26,7 +26,7 @@ const ExperienceCard = ({ experience }: { experience: Experience }) => {
           </div>
           <div className="flex items-center text-gray-600">
             <LocationIcon />
-            <span>{experience.location}</span>
+            <span className="ml-2">{experience.location}</span>
           </div>
         </div>
       </div>

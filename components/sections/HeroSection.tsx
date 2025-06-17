@@ -1,15 +1,18 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import {
   LINKEDIN_URL,
   PERSONAL_EMAIL,
   PERSONAL_PHONE,
-} from '@/constants/links';
+} from '@/constants/constants';
 import EmailIcon from '../icons/EmailIcon';
 import LinkedinIcon from '../icons/LinkedinIcon';
 import PhoneIcon from '../icons/PhoneIcon';
 import DownArrowIcon from '../icons/DownArrowIcon';
 import Icon from '../layout/Icon';
+import { scrollToSectionHandler } from '@/utils/scroll-to-section';
 
 const HeroSection = () => {
   return (
@@ -18,7 +21,7 @@ const HeroSection = () => {
       className="min-h-screen flex items-center justify-center bg-gradient-to-br from-red-50 to-green-100 relative"
     >
       <div className="container mx-auto px-6 text-center">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <Image
             className="w-48 h-48 mx-auto mb-8 rounded-full flex items-center justify-center shadow-lg"
             src="/images/lucas.png"
@@ -47,7 +50,10 @@ const HeroSection = () => {
             <Icon href={`tel:${PERSONAL_PHONE}`} IconComponent={PhoneIcon} />
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 bg-main text-white rounded-lg hover:bg-main-hover transition-colors duration-200 font-medium shadow-lg hover:shadow-xl">
+            <button
+              onClick={() => scrollToSectionHandler('about')}
+              className="px-8 py-3 bg-main text-white rounded-lg hover:bg-main-hover transition-colors duration-200 font-medium shadow-lg hover:shadow-xl"
+            >
               Learn more about me
             </button>
             <a
@@ -61,7 +67,10 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <button className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-gray-600 hover:text-main transition-colors anim-duration-200">
+      <button
+        onClick={() => scrollToSectionHandler('about')}
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-gray-600 hover:text-main transition-colors anim-duration-200"
+      >
         <DownArrowIcon />
       </button>
     </section>

@@ -27,4 +27,5 @@ export const navLinks: { label: string; id: string }[] = [
 
 export const LINKEDIN_URL = 'https://www.linkedin.com/in/lucas-cipriani/';
 export const PERSONAL_EMAIL = 'lucas.ci25@hotmail.com';
-export const PERSONAL_PHONE = '+5548996001678';
+export const PERSONAL_PHONE = '+55 (48) 99600-1678';
+export const LOCATION = 'Nova Trento, Santa Catarina - Brazil';

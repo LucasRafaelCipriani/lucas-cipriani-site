@@ -1,6 +1,6 @@
 'use client';
 
-import { navLinks } from '@/constants/links';
+import { navLinks } from '@/constants/constants';
 
 const NavLinksMobile = ({
   onNavLinkClick,

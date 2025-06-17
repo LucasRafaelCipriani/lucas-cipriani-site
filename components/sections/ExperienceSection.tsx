@@ -14,7 +14,7 @@ const ExperienceSection = async () => {
   return (
     <section id="experience" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
             Professional Experience
           </h2>
