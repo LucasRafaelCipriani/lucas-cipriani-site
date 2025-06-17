@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import Header from '@/components/layout/header';
-import Footer from '@/components/layout/footer';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
   title: 'Lucas Cipriani Portfolio',
@@ -32,12 +32,12 @@ export default function RootLayout({
           href="/favicon-16x16.png"
         />
       </head>
-      <body className="flex flex-col min-h-screen bg-gray-500 text-white">
-        <Header />
-        <main className="flex-grow md:max-w-[1230px] md:m-auto">
-          <div className="px-[20px] py-[80px] md:px-0">{children}</div>
-        </main>
-        <Footer />
+      <body>
+        <div className="min-h-screen bg-white">
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

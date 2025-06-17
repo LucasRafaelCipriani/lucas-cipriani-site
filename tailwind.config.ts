@@ -8,25 +8,54 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animationDuration: {
+        0: '0ms',
+        75: '75ms',
+        100: '100ms',
+        150: '150ms',
+        200: '200ms',
+        300: '300ms',
+        500: '500ms',
+        700: '700ms',
+        1000: '1000ms',
+      },
       colors: {
-        'dark-blue': '#2D3E50',
-        white: '#FFF',
-        cian: '#00B8D4',
-      },
-      transitionProperty: {
-        height: 'height',
-        spacing: 'margin, padding',
-        opacity: 'opacity',
-      },
-      transitionDuration: {
-        '300': '300ms',
-        '500': '500ms',
-      },
-      transitionTimingFunction: {
-        'in-out': 'ease-in-out',
+        main: '#16A34A',
+        'main-hover': '#15803D',
       },
     },
+    container: {
+      center: true,
+      padding: '1rem',
+      screens: {
+        DEFAULT: '100%',
+        '2xl': '1400px',
+      },
+    },
+    'duration-200': {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss/plugin')(function ({
+      addUtilities,
+      theme,
+    }: {
+      addUtilities: (
+        utilities: Record<string, any>,
+        variants?: string[]
+      ) => void;
+      theme: (path: string) => any;
+    }) {
+      const durations = theme('animationDuration') as Record<string, string>;
+      const newUtilities = Object.entries(durations).reduce<
+        Record<string, { 'animation-duration': string }>
+      >((acc, [key, value]) => {
+        acc[`.anim-duration-${key}`] = {
+          'animation-duration': value,
+        };
+        return acc;
+      }, {});
+      addUtilities(newUtilities, ['responsive']);
+    }),
+  ],
 };
 export default config;
