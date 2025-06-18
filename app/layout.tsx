@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Script from 'next/script';
 import { Inter } from 'next/font/google';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -53,6 +52,43 @@ export default function RootLayout({
           sizes="16x16"
           href="/favicon-16x16.png"
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Person',
+              name: 'Lucas Cipriani',
+              url: 'https://lucascipriani.com',
+              image: 'https://lucascipriani.com/images/lucas.png',
+              sameAs: [
+                'https://github.com/LucasRafaelCipriani',
+                'https://www.linkedin.com/in/lucas-cipriani',
+              ],
+              jobTitle: 'Frontend Developer',
+              alumniOf: {
+                '@type': 'CollegeOrUniversity',
+                name: 'Faculdade Estácio Florianópolis',
+              },
+              knowsAbout: [
+                'React',
+                'Next.js',
+                'JavaScript',
+                'TypeScript',
+                'HTML',
+                'CSS',
+                'UI/UX Design',
+              ],
+              description:
+                'This is my personal website, where you can find all my work related information.',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Santa Catarina',
+                addressCountry: 'BR',
+              },
+            }),
+          }}
+        />
       </head>
       <body>
         <div className="min-h-screen bg-white">
@@ -61,43 +97,6 @@ export default function RootLayout({
           <Footer />
         </div>
       </body>
-      <Script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Person',
-            name: 'Lucas Cipriani',
-            url: 'https://lucascipriani.com',
-            image: 'https://lucascipriani.com/images/lucas.png',
-            sameAs: [
-              'https://github.com/LucasRafaelCipriani',
-              'https://www.linkedin.com/in/lucas-cipriani',
-            ],
-            jobTitle: 'Frontend Developer',
-            alumniOf: {
-              '@type': 'CollegeOrUniversity',
-              name: 'Faculdade Estácio Florianópolis',
-            },
-            knowsAbout: [
-              'React',
-              'Next.js',
-              'JavaScript',
-              'TypeScript',
-              'HTML',
-              'CSS',
-              'UI/UX Design',
-            ],
-            description:
-              'This is my personal website, where you can find all my work related information.',
-            address: {
-              '@type': 'PostalAddress',
-              addressLocality: 'Santa Catarina',
-              addressCountry: 'BR',
-            },
-          }),
-        }}
-      />
     </html>
   );
 }
