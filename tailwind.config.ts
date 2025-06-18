@@ -20,7 +20,7 @@ const config: Config = {
         1000: '1000ms',
       },
       colors: {
-        main: '#16A34A',
+        main: '#006600',
         'main-hover': '#15803D',
       },
       screens: {

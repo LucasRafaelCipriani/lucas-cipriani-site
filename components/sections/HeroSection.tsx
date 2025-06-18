@@ -46,9 +46,18 @@ const HeroSection = () => {
               href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn"
             />
-            <Icon href={`mailto:${PERSONAL_EMAIL}`} IconComponent={EmailIcon} />
-            <Icon href={`tel:${PERSONAL_PHONE}`} IconComponent={PhoneIcon} />
+            <Icon
+              href={`mailto:${PERSONAL_EMAIL}`}
+              IconComponent={EmailIcon}
+              aria-label="Email"
+            />
+            <Icon
+              href={`tel:${PERSONAL_PHONE}`}
+              IconComponent={PhoneIcon}
+              aria-label="Phone"
+            />
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button

@@ -42,6 +42,7 @@ const Header = () => {
           <NavLinks onNavLinkClick={scrollToSectionHandler} />
           <button
             className="md:hidden text-gray-600"
+            aria-label={mobileMenuOpened ? 'Close Menu' : 'Open Menu'}
             onClick={() => setMobileMenuOpened((prev) => !prev)}
           >
             {mobileMenuOpened ? <CloseIcon /> : <HambugerMenuIcon />}
