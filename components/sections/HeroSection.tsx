@@ -20,7 +20,7 @@ const HeroSection = () => {
       id="hero"
       className="min-h-screen flex items-center justify-center bg-gradient-to-br from-red-50 to-green-100 relative scroll-mt-[60px]"
     >
-      <div className="container mx-auto px-6 text-center mt-[90px] pb-10 min-[410px]:mt-0 min-[410px]:pb-0">
+      <div className="container mx-auto px-6 text-center mt-[90px] pb-10 normal:mt-0 normal:pb-0">
         <div className="max-w-5xl mx-auto">
           <Image
             className="w-48 h-48 mx-auto mb-8 rounded-full flex items-center justify-center shadow-lg"
@@ -70,7 +70,7 @@ const HeroSection = () => {
       </div>
       <button
         onClick={() => scrollToSectionHandler('about')}
-        className="hidden min-[410px]:block absolute bottom-8 transform -translate-x-1/2 animate-bounce text-gray-600 hover:text-main transition-colors anim-duration-200"
+        className="hidden normal:block absolute bottom-8 transform -translate-x-1/2 animate-bounce text-gray-600 hover:text-main transition-colors anim-duration-200"
       >
         <DownArrowIcon />
       </button>

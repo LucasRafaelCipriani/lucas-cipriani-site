@@ -23,6 +23,9 @@ const config: Config = {
         main: '#16A34A',
         'main-hover': '#15803D',
       },
+      screens: {
+        normal: { raw: '(min-width: 410px) and (min-height: 900px)' },
+      },
     },
     container: {
       center: true,
