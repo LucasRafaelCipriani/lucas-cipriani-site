@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { Inter } from 'next/font/google';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -7,7 +8,22 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Lucas Cipriani - Frontend Developer',
   description:
-    'This is the portfolio page of Lucas Cipriani, where you can find all my work related information.',
+    'This is my personal website, where you can find all my work related information.',
+  robots: 'index, follow',
+  openGraph: {
+    title: 'Lucas Cipriani - Frontend Developer',
+    description:
+      'This is my personal website, where you can find all my work related information.',
+    url: 'https://lucascipriani.com/',
+    images: [
+      {
+        url: 'https://lucascipriani.com/images/lucas.png',
+        width: 800,
+        height: 600,
+        alt: 'Lucas Cipriani - Frontend Developer',
+      },
+    ],
+  },
 };
 
 const inter = Inter({
@@ -45,6 +61,43 @@ export default function RootLayout({
           <Footer />
         </div>
       </body>
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Person',
+            name: 'Lucas Cipriani',
+            url: 'https://lucascipriani.com',
+            image: 'https://lucascipriani.com/images/lucas.png',
+            sameAs: [
+              'https://github.com/LucasRafaelCipriani',
+              'https://www.linkedin.com/in/lucas-cipriani',
+            ],
+            jobTitle: 'Frontend Developer',
+            alumniOf: {
+              '@type': 'CollegeOrUniversity',
+              name: 'Faculdade Estácio Florianópolis',
+            },
+            knowsAbout: [
+              'React',
+              'Next.js',
+              'JavaScript',
+              'TypeScript',
+              'HTML',
+              'CSS',
+              'UI/UX Design',
+            ],
+            description:
+              'This is my personal website, where you can find all my work related information.',
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: 'Santa Catarina',
+              addressCountry: 'BR',
+            },
+          }),
+        }}
+      />
     </html>
   );
 }

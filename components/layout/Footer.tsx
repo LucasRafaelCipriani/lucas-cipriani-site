@@ -71,7 +71,8 @@ const Footer = () => {
           <div className="border-t border-green-800 mt-8 pt-8 text-center">
             <p className="text-gray-400 flex items-center justify-center space-x-1">
               <span>
-                © {new Date().getUTCFullYear()} Lucas Cipriani Portfolio
+                © {new Date().getUTCFullYear()} Lucas Cipriani Website. Made
+                using Next.js and TailwindCSS.
               </span>
             </p>
           </div>
