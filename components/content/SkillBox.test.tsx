@@ -23,5 +23,8 @@ test('shows title and all skills', () => {
     expect(
       within(screen.getByTestId('skillName')).getByText(skill)
     ).toBeInTheDocument();
+    expect(
+      within(screen.getByTestId('skillName')).getByText(skill)
+    ).toHaveTextContent(skill);
   }
 });

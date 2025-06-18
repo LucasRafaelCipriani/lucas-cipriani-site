@@ -18,7 +18,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-red-50 to-green-100 relative"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-red-50 to-green-100 relative scroll-mt-[60px]"
     >
       <div className="container mx-auto px-6 text-center">
         <div className="max-w-5xl mx-auto">
@@ -30,7 +30,7 @@ const HeroSection = () => {
             alt="Lucas Cipriani Profile"
             priority
           />
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6 animate-fade-in">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6 animate-fade-in">
             Hello, I am <span className="text-main">Lucas Cipriani</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-4 max-w-3xl mx-auto">
@@ -70,7 +70,7 @@ const HeroSection = () => {
       </div>
       <button
         onClick={() => scrollToSectionHandler('about')}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-gray-600 hover:text-main transition-colors anim-duration-200"
+        className="absolute bottom-8 transform -translate-x-1/2 animate-bounce text-gray-600 hover:text-main transition-colors anim-duration-200"
       >
         <DownArrowIcon />
       </button>

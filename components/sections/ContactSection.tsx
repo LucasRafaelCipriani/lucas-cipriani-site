@@ -12,7 +12,7 @@ import LinkedinIcon from '../icons/LinkedinIcon';
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-10 md:py-20 bg-white scroll-mt-[60px]">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-12">
@@ -29,7 +29,7 @@ const ContactSection = () => {
               out!
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             <div className="flex flex-col items-center text-center">
               <div className="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center text-main mb-4">
                 <EmailIcon width="28" height="28" />

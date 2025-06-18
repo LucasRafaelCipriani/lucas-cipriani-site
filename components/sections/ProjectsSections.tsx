@@ -9,11 +9,14 @@ const ProjectsSections = async () => {
   const projects: Project[] = await res.json();
 
   return (
-    <section id="projects" className="py-20 bg-gray-50">
+    <section
+      id="projects"
+      className="py-10 md:py-20 bg-gray-50 scroll-mt-[60px]"
+    >
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-4">
-            Key Career Achievements
+            Projects
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
             Highlighted achievements that demonstrate my experience and impact

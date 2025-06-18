@@ -9,7 +9,10 @@ const ExperienceSection = async () => {
   const experiences: Experience[] = await res.json();
 
   return (
-    <section id="experience" className="py-20 bg-gray-50">
+    <section
+      id="experience"
+      className="py-10 md:py-20 bg-gray-50 scroll-mt-[60px]"
+    >
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">

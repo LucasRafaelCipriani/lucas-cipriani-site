@@ -16,7 +16,7 @@ const SkillsSection = async () => {
   const [skills, languages]: [Experience[], Language[]] = await data;
 
   return (
-    <section id="skills" className="py-20 bg-white">
+    <section id="skills" className="py-10 md:py-20 bg-white scroll-mt-[60px]">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">

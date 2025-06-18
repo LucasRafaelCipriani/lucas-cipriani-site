@@ -1,7 +1,7 @@
 export const scrollToSectionHandler = (id: string) => {
-  const elemento = document.getElementById(id);
-  if (elemento) {
-    elemento.scrollIntoView({
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
     });
