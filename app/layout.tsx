@@ -36,41 +36,41 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang='en' className={inter.className}>
       <head>
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel='manifest' href='/manifest.json' />
+        <link rel='icon' href='/favicon.ico' />
         <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
+          rel='icon'
+          type='image/png'
+          sizes='32x32'
+          href='/favicon-32x32.png'
         />
         <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
+          rel='icon'
+          type='image/png'
+          sizes='16x16'
+          href='/favicon-16x16.png'
         />
         <script
-          type="application/ld+json"
+          type='application/ld+json'
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Person',
-              name: 'Lucas Cipriani',
-              url: 'https://lucascipriani.com',
-              image: 'https://lucascipriani.com/images/lucas.png',
-              sameAs: [
+              'name': 'Lucas Cipriani',
+              'url': 'https://lucascipriani.com',
+              'image': 'https://lucascipriani.com/images/lucas.png',
+              'sameAs': [
                 'https://github.com/LucasRafaelCipriani',
                 'https://www.linkedin.com/in/lucas-cipriani',
               ],
-              jobTitle: 'Frontend Developer',
-              alumniOf: {
+              'jobTitle': 'Frontend Developer',
+              'alumniOf': {
                 '@type': 'CollegeOrUniversity',
-                name: 'Faculdade Estácio Florianópolis',
+                'name': 'Faculdade Estácio Florianópolis',
               },
-              knowsAbout: [
+              'knowsAbout': [
                 'React',
                 'Next.js',
                 'JavaScript',
@@ -79,19 +79,19 @@ export default function RootLayout({
                 'CSS',
                 'UI/UX Design',
               ],
-              description:
+              'description':
                 'This is my personal website, where you can find all my work related information.',
-              address: {
+              'address': {
                 '@type': 'PostalAddress',
-                addressLocality: 'Santa Catarina',
-                addressCountry: 'BR',
+                'addressLocality': 'Santa Catarina',
+                'addressCountry': 'BR',
               },
             }),
           }}
         />
       </head>
       <body>
-        <div className="min-h-screen bg-white">
+        <div className='min-h-screen bg-white'>
           <Header />
           <main>{children}</main>
           <Footer />

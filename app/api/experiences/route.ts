@@ -21,6 +21,15 @@ export async function GET() {
         'KnockoutJS',
       ],
     },
+    {
+      title: 'Web Developer',
+      company: 'Overlabs',
+      startAt: new Date(2025, 7, 14),
+      location: 'Remote (Brazil)',
+      description:
+        'Worked as a Frontend Developer at McFadyen Digital, creating user-friendly e-commerce interfaces with React, JavaScript, HTML, and CSS. Experienced in building scalable solutions integrated with Magento2. Committed to delivering high-quality work focused on usability, performance, and client satisfaction.',
+      skills: ['JavaScript', 'React', 'HTML', 'CSS', 'Redux', 'SolidJS'],
+    },
   ];
 
   return new Response(JSON.stringify(data), {
