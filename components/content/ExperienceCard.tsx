@@ -43,9 +43,8 @@ const ExperienceCard = ({ experience }: { experience: Experience }) => {
       <p
         className='text-gray-600 mb-4 leading-relaxed'
         data-testid='experienceDescription'
-      >
-        {experience.description}
-      </p>
+        dangerouslySetInnerHTML={{ __html: experience.description }}
+      />
       <div className='flex flex-wrap gap-2' data-testid='experienceSkills'>
         {experience.skills.map((skill) => (
           <SkillBadge skill={skill} key={skill} />

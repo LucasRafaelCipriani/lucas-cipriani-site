@@ -1,7 +1,5 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -92,9 +90,7 @@ export default function RootLayout({
       </head>
       <body>
         <div className='min-h-screen bg-white'>
-          <Header />
           <main>{children}</main>
-          <Footer />
         </div>
       </body>
     </html>

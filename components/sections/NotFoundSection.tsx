@@ -1,18 +1,6 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
-import {
-  LINKEDIN_URL,
-  PERSONAL_EMAIL,
-  PERSONAL_PHONE,
-} from '@/constants/constants';
-import EmailIcon from '../icons/EmailIcon';
-import LinkedinIcon from '../icons/LinkedinIcon';
-import PhoneIcon from '../icons/PhoneIcon';
-import DownArrowIcon from '../icons/DownArrowIcon';
-import Icon from '../layout/Icon';
-import { scrollToSectionHandler } from '@/utils/scroll-to-section';
 import Link from 'next/link';
 
 const NotFoundSection = () => {
@@ -36,12 +24,6 @@ const NotFoundSection = () => {
           </div>
         </div>
       </div>
-      <button
-        onClick={() => scrollToSectionHandler('about')}
-        className='hidden normal:block absolute bottom-8 transform -translate-x-1/2 animate-bounce text-gray-600 hover:text-main transition-colors anim-duration-200'
-      >
-        <DownArrowIcon />
-      </button>
     </section>
   );
 };

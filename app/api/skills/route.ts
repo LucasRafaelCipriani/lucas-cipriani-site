@@ -7,9 +7,10 @@ export async function GET() {
       skills: [
         'JavaScript',
         'React',
+        'Redux',
         'HTML',
         'CSS',
-        'Redux',
+        'Sass',
         'Vue',
         'NodeJS',
         'KnockoutJS',

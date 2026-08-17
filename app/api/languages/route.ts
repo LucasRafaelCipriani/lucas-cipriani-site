@@ -10,14 +10,6 @@ export async function GET() {
       language: 'English',
       level: 'Fluent',
     },
-    {
-      language: 'Italian',
-      level: 'Begginer',
-    },
-    {
-      language: 'Japanese',
-      level: 'Begginer',
-    },
   ];
 
   return new Response(JSON.stringify(data), {
