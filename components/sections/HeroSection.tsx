@@ -17,60 +17,61 @@ import { scrollToSectionHandler } from '@/utils/scroll-to-section';
 const HeroSection = () => {
   return (
     <section
-      id="hero"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-red-50 to-green-100 relative scroll-mt-[60px]"
+      id='hero'
+      className='min-h-screen flex items-center justify-center bg-gradient-to-br from-red-50 to-green-100 relative scroll-mt-[60px]'
     >
-      <div className="container mx-auto px-6 text-center mt-[90px] pb-10 normal:mt-0 normal:pb-0">
-        <div className="max-w-5xl mx-auto">
+      <div className='container mx-auto px-6 text-center mt-[90px] pb-10 normal:mt-0 normal:pb-0'>
+        <div className='max-w-5xl mx-auto'>
           <Image
-            className="w-48 h-48 mx-auto mb-8 rounded-full flex items-center justify-center shadow-lg"
-            src="/images/lucas.png"
+            className='w-48 h-48 mx-auto mb-8 rounded-full flex items-center justify-center shadow-lg'
+            src='/images/lucas.png'
             width={48}
             height={48}
-            alt="Lucas Cipriani Profile"
+            alt='Lucas Cipriani Profile'
             priority
           />
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6 animate-fade-in">
-            Hello, I am <span className="text-main">Lucas Cipriani</span>
+          <h1 className='text-4xl md:text-6xl font-bold text-gray-800 mb-6 animate-fade-in'>
+            Hello, I am <span className='text-main'>Lucas Cipriani</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-4 max-w-3xl mx-auto">
+          <p className='text-xl md:text-2xl text-gray-600 mb-4 max-w-3xl mx-auto'>
             Frontend Developer
           </p>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className='text-lg text-gray-600 mb-8 max-w-2xl mx-auto'>
             Translating ideas into intuitive interfaces that drive results —
-            building digital experiences for over 8 years.
+            building digital experiences for over{' '}
+            {new Date().getFullYear() - 2017} years.
           </p>
-          <div className="flex justify-center space-x-6 mb-12">
+          <div className='flex justify-center space-x-6 mb-12'>
             <Icon
               IconComponent={LinkedinIcon}
               href={LINKEDIN_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='LinkedIn'
             />
             <Icon
               href={`mailto:${PERSONAL_EMAIL}`}
               IconComponent={EmailIcon}
-              aria-label="Email"
+              aria-label='Email'
             />
             <Icon
               href={`tel:${PERSONAL_PHONE}`}
               IconComponent={PhoneIcon}
-              aria-label="Phone"
+              aria-label='Phone'
             />
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className='flex flex-col sm:flex-row gap-4 justify-center'>
             <button
               onClick={() => scrollToSectionHandler('about')}
-              className="px-8 py-3 bg-main text-white rounded-lg hover:bg-main-hover transition-colors duration-200 font-medium shadow-lg hover:shadow-xl"
+              className='px-8 py-3 bg-main text-white rounded-lg hover:bg-main-hover transition-colors duration-200 font-medium shadow-lg hover:shadow-xl'
             >
               Learn more about me
             </button>
             <a
-              href="/documents/Lucas Ciprani - Curriculum.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-3 border-2 border-main text-main rounded-lg hover:bg-main hover:text-white transition-colors duration-200 font-medium"
+              href='/documents/Lucas Ciprani - Curriculum.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='px-8 py-3 border-2 border-main text-main rounded-lg hover:bg-main hover:text-white transition-colors duration-200 font-medium'
             >
               Download CV
             </a>
@@ -79,7 +80,7 @@ const HeroSection = () => {
       </div>
       <button
         onClick={() => scrollToSectionHandler('about')}
-        className="hidden normal:block absolute bottom-8 transform -translate-x-1/2 animate-bounce text-gray-600 hover:text-main transition-colors anim-duration-200"
+        className='hidden normal:block absolute bottom-8 transform -translate-x-1/2 animate-bounce text-gray-600 hover:text-main transition-colors anim-duration-200'
       >
         <DownArrowIcon />
       </button>

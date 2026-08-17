@@ -21,9 +21,9 @@ const Footer = () => {
             <div>
               <h3 className='text-2xl font-bold mb-4'>Lucas Cipriani</h3>
               <p className='text-gray-400 leading-relaxed'>
-                Frontend Developer. Over 9 years of experience in digital
-                transformation and web development, collaborating with global
-                teams.
+                Frontend Developer. Over {new Date().getFullYear() - 2017} years
+                of experience in digital transformation and web development,
+                collaborating with global teams.
               </p>
             </div>
             <div>

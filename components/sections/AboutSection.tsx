@@ -14,11 +14,12 @@ const AboutSection = () => {
                 My Journey
               </h3>
               <p className='text-gray-600 mb-6 leading-relaxed'>
-                I have been fortunate enough to spend about nine years working
-                in the development sector with a range of technologies and
-                people. Every experience adds to my skill set, but I am
-                confident that I will continuously work hard at being as good as
-                I can be at being a professional.
+                I have been fortunate enough to spend about{' '}
+                {new Date().getFullYear() - 2017} years working in the
+                development sector with a range of technologies and people.
+                Every experience adds to my skill set, but I am confident that I
+                will continuously work hard at being as good as I can be at
+                being a professional.
               </p>
               <p className='text-gray-600 mb-6 leading-relaxed'>
                 My education was in Information Systems and I specialize in
